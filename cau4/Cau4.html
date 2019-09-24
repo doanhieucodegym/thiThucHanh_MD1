@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 4</title>
+</head>
+<body>
+<canvas id="rec" width="600px" height="600px" style="border: 1px solid #a9a9a9"></canvas>
+<script>
+function Rec(x,y,width,height) {
+    this.x =x;
+    this.y =y;
+    this.width =width;
+    this.height =height;
+}
+function createRec() {
+    let ctx =document.getElementById("rec").getContext('2d');
+    let rec = new Rec(10,10,200,100);
+    ctx.beginPath();
+    ctx.fillRect(rec.x,rec.y,rec.width,rec.height);
+    ctx.fillStyle="#000000";
+}
+createRec();
+</script>
+</body>
+</html>

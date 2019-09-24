@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 2 </title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(arr,number) {
+        let index = -1;
+        for (let i = 0 ;i<arr.length;i++){
+            if(arr[i] === number){
+                index =i;
+
+                if(index !=-1){
+                    arr.splice(index,1);
+                    return arr;
+                }else {
+                    return arr;
+                }
+            }
+        };
+
+
+    }
+    let  a = [12,6,3,7,21,5,7];
+    let b =7;
+  let c=  tryRemoveFromArray(a,b);
+console.log(c);
+</script>
+</body>
+</html>
